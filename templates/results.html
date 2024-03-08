@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+{{response}}
+{{ weather_list[0] }}
+{{ weather dict }}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+.weather {
+  text-align: center;
+  padding: 20px;
+}
+.temp {
+  font-size: 2em;
+}
+.details {
+  font-size: 1.2em;
+}
+.graph {
+  height: 200px;
+  background: #f0f0f0;
+}
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.day {
+  text-align: center;
+}
+
+{% endblock %}
